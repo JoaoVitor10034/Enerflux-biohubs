@@ -1,5 +1,5 @@
-:root{--g:#176B4D;--gl:#DDF3E7;--b:#123047;--a:#E6A23C;--bg:#F6F8F5;--s:#fff;--t:#17231D;--t2:#52645A;--br:#D9E2DB;--err:#B42318;--inf:#175CD3;--amb-t:#7A4A00;--amb-bg:#FFF4DC;--r:16px}
-@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--g:#5CCB9A;--gl:#12372A;--b:#0B1B28;--a:#F0B45A;--bg:#0D1612;--s:#15211B;--t:#E8F1EB;--t2:#A5B8AC;--br:#274034;--err:#FF8A7A;--inf:#8AB4FF;--amb-t:#F6D08F;--amb-bg:#3A2C10}}
+:root{--g:#176B4D;--gl:#DDF3E7;--b:#123047;--a:#B7C4BB;--bg:#F6F8F5;--s:#fff;--t:#17231D;--t2:#52645A;--br:#D9E2DB;--err:#B42318;--inf:#175CD3;--amb-t:#52645A;--amb-bg:#EEF3EF;--r:16px}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--g:#5CCB9A;--gl:#12372A;--b:#0B1B28;--a:#274034;--bg:#0D1612;--s:#15211B;--t:#E8F1EB;--t2:#A5B8AC;--br:#274034;--err:#FF8A7A;--inf:#8AB4FF;--amb-t:#A5B8AC;--amb-bg:#1B2A22}}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}
 :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 body{margin:0;font:400 1rem/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--t);overflow-x:hidden}
@@ -29,7 +29,7 @@ header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 8
 .hero{padding:56px 0 64px;background:linear-gradient(180deg,var(--gl),var(--bg))}
 .hero .g{display:grid;gap:36px;align-items:center}@media(min-width:900px){.hero .g{grid-template-columns:1.15fr .85fr}}
 .cta{display:flex;flex-direction:column;gap:12px;margin:24px 0}@media(min-width:560px){.cta{flex-direction:row;flex-wrap:wrap}}
-.alert{display:flex;gap:10px;padding:14px 16px;border-radius:12px;background:var(--amb-bg);color:var(--amb-t);border:1px solid var(--a);font-size:.9rem}
+.alert{display:flex;gap:8px;padding:0;margin:0 0 1em;background:none;color:var(--t2);border:0;font-size:.85rem}.alert>span[aria-hidden]{display:none}header .chip{background:var(--gl);color:var(--g);border-color:var(--g)}
 .card{background:var(--s);border:1px solid var(--br);border-radius:var(--r);padding:22px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
 .grid{display:grid;gap:16px}@media(min-width:640px){.g2{grid-template-columns:repeat(2,1fr)}}@media(min-width:960px){.g3{grid-template-columns:repeat(3,1fr)}}
 .flow{list-style:none;margin:0;padding:0;display:grid;gap:12px}
