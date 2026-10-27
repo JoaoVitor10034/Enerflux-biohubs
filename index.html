@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Enerflux BioHub | Resíduos hoje, valor para a comunidade amanhã</title>
+<meta name="description" content="Demonstração interativa de uma proposta de tecnologia comunitária para identificar, registrar e encaminhar biomassa a rotas de valorização adequadas.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Enerflux BioHub | Demonstração interativa">
+<meta property="og:description" content="Resíduos hoje. Valor para a comunidade amanhã. Protótipo conceitual com dados simulados e transparência sobre limites.">
+<link rel="canonical" href="https://enerflux-biohub-natureza.vercel.app/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌱%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header>
+<div class="w nav" style="position:relative">
+<a class="logo" href="#inicio" aria-label="Enerflux BioHub, início">🌱 Enerflux<span>/BioHub</span></a>
+<span class="chip" title="Não há sistema operacional real conectado">DEMONSTRAÇÃO INTERATIVA</span>
+<nav aria-label="Principal">
+<button id="mb" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button>
+<ul class="menu" id="menu">
+<li><a href="#inicio">Início</a></li><li><a href="#morador">Área do morador</a></li><li><a href="#como">Como funciona</a></li><li><a href="#bioatm">BioATM</a></li><li><a href="#impacto">Meu impacto</a></li><li><a href="#comunidade">Comunidade</a></li><li><a href="#biomassa">Biomassa</a></li><li><a href="#projeto">Projeto</a></li><li><a href="#bioatm" class="btn" style="color:#fff;min-height:44px;padding:8px 16px">Ver demonstração</a></li>
+</ul></nav>
+</div>
+</header>
+
+<main id="conteudo">
+<!-- HERO -->
+<section class="hero" id="inicio" aria-labelledby="t-hero">
+<div class="w g">
+<div>
+<p class="eyebrow">Conectar resíduos, dados e oportunidades locais</p>
+<h1 id="t-hero">Resíduos hoje.<br>Valor para a comunidade amanhã.</h1>
+<p class="muted" style="font-size:1.1rem;max-width:56ch">Uma proposta de tecnologia comunitária para identificar, registrar e encaminhar biomassa a rotas adequadas de valorização, com transparência sobre dados, limites e impacto.</p>
+<div class="fl" aria-label="Fluxo: resíduos, biomassa, avaliação, comunidade"><span>RESÍDUOS</span><b></b><span>BIOMASSA</span><b></b><span>AVALIAÇÃO</span><b></b><span>COMUNIDADE</span></div>
+<div class="cta"><a class="btn" href="#bioatm">Experimentar o BioATM demonstrativo</a><a class="btn sec" href="#como">Entender como funciona</a></div>
+<p class="alert" role="note"><span aria-hidden="true">⚠️</span><span><b>Protótipo demonstrativo</b> — não conectado a sensores, balança ou planta energética. O BioATM não converte resíduos diretamente em eletricidade.</span></p>
+</div>
+<figure style="margin:0" class="card">
+<svg viewBox="0 0 360 300" role="img" aria-labelledby="fg" style="width:100%;height:auto">
+<title id="fg">Diagrama do fluxo: ponto de recebimento, triagem e registro, avaliação técnica, rota de valorização</title>
+<g font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="600" fill="currentColor">
+<rect x="20" y="14" width="320" height="52" rx="12" fill="var(--gl)" stroke="var(--g)"/><text x="40" y="46">1 · Ponto de recebimento</text>
+<rect x="20" y="86" width="320" height="52" rx="12" fill="var(--gl)" stroke="var(--g)"/><text x="40" y="118">2 · Triagem e registro</text>
+<rect x="20" y="158" width="320" height="52" rx="12" fill="var(--amb-bg)" stroke="var(--a)"/><text x="40" y="190">3 · Avaliação técnica (a validar)</text>
+<rect x="20" y="230" width="320" height="52" rx="12" fill="none" stroke="var(--t2)" stroke-dasharray="6 4"/><text x="40" y="262">4 · Rota de valorização (hipótese)</text>
+<g stroke="var(--g)" stroke-width="2"><path d="M180 66v20M180 138v20M180 210v20"/></g></g></svg>
+<figcaption class="muted" style="font-size:.82rem;margin-top:8px">Diagrama conceitual. Linhas tracejadas indicam etapas ainda não validadas.</figcaption>
+</figure>
+</div>
+</section>
+
+<!-- DESAFIO / PROPOSTA -->
+<section class="band" aria-labelledby="t-prop"><div class="w grid g2">
+<div><p class="eyebrow">O desafio</p><h2 id="t-prop">Nem todo resíduo tem o mesmo destino</h2>
+<p class="muted">Resíduos orgânicos e agroindustriais podem ser um recurso quando identificados, separados e encaminhados corretamente. A rota depende do tipo de material, das condições, da logística e da infraestrutura disponível.</p></div>
+<div><p class="eyebrow">A proposta</p><h3 style="font-size:1.5rem">Receber, rastrear, avaliar</h3>
+<p class="muted">O BioATM é o ponto de interação para registrar o material; a plataforma organiza informações e contribuições; a avaliação técnica ajuda a identificar possibilidades de valorização.</p></div>
+</div></section>
+
+<!-- PROBLEMA -->
+<section aria-labelledby="t-prob"><div class="w"><p class="eyebrow">Pontos a investigar</p><h2 id="t-prob">O problema, em quatro pontos</h2>
+<div class="grid g2">
+<div class="dk"><b>01</b><h3>Separação</h3><p>Resíduos misturados podem perder valor e dificultar qualquer rota de aproveitamento.</p></div>
+<div class="dk"><b>02</b><h3>Rastreabilidade</h3><p>Sem registro de origem, tipo e massa, não há como saber para onde o material foi.</p></div>
+<div class="dk"><b>03</b><h3>Rota adequada</h3><p>A melhor destinação depende do material, da escala e da infraestrutura disponível.</p></div>
+<div class="dk"><b>04</b><h3>Confiança nos dados</h3><p>Indicadores sem fonte, unidade e método não permitem decisões nem parcerias sérias.</p></div>
+</div></div></section>
+
+<!-- COMO FUNCIONA -->
+<section id="como" aria-labelledby="t-como"><div class="w">
+<p class="eyebrow">Jornada ponta a ponta</p><h2 id="t-como">Como funciona</h2>
+<p class="muted" style="max-width:62ch">Cinco etapas, cada uma com o estado real hoje: <span class="chip ok">Simulado</span> <span class="chip in">Conceitual</span> <span class="chip">A validar</span></p>
+<ol class="flow" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+<li><b>1 · Separar</b>Entrada: resíduo do morador. Saída: material separado. Responsável: participante. <span class="chip in">Conceitual</span></li>
+<li><b>2 · Identificar</b>Entrada: material. Saída: categoria e origem registradas. Responsável: participante/BioATM. <span class="chip ok">Simulado</span></li>
+<li><b>3 · Pesar</b>Entrada manual em kg (demonstração). Balança real: não integrada. <span class="chip ok">Simulado</span></li>
+<li><b>4 · Avaliar</b>Rotas candidatas sujeitas a validação técnica. Responsável: especialistas. <span class="chip">A validar</span></li>
+<li><b>5 · Destinar</b>Registro do destino somente com confirmação operacional. <span class="chip in">Conceitual</span></li>
+</ol></div></section>
+
+<!-- ÁREA DO MORADOR -->
+<section id="morador" aria-labelledby="t-mor"><div class="w" style="max-width:760px">
+<p class="eyebrow">Acesso demonstrativo</p><h2 id="t-mor">Área do morador: sua contribuição começa aqui</h2>
+<p class="alert" role="note"><span aria-hidden="true">⚠️</span><span>Sem senha e sem autenticação real. Use um apelido fictício: ele e seus depósitos simulados ficam apenas neste navegador. O apelido é opcional.</span></p>
+<div class="card"><div id="mout"><form id="mf" novalidate><label for="ap">Apelido (opcional)</label><input id="ap" maxlength="30" autocomplete="off" aria-describedby="hap eap"><p class="muted" id="hap" style="font-size:.85rem;margin:6px 0 0">De 2 a 30 caracteres: letras, números, espaços, ponto, hífen ou _.</p><p class="err" id="eap" role="alert"></p><div class="row"><button class="btn" type="submit">Entrar com apelido</button><a class="btn sec" href="#bioatm">Continuar como visitante</a></div></form></div>
+<div id="min" hidden><p>Olá, <b id="mn"></b>! Seus depósitos simulados ficam vinculados a este apelido, neste navegador.</p><div class="row"><a class="btn" href="#bioatm">Iniciar depósito</a><button class="btn sec" id="sair" type="button">Sair</button></div></div></div>
+</div></section>
+
+<!-- BIOATM -->
+<section class="band" id="bioatm" aria-labelledby="t-atm"><div class="w" style="max-width:760px">
+<p class="eyebrow">Demonstração interativa</p><h2 id="t-atm">BioATM demonstrativo</h2>
+<p class="alert" role="note"><span aria-hidden="true">⚠️</span><span>Peso digitado manualmente. Nenhuma pesagem, sensor ou conversão energética ocorre aqui. Materiais listados são exemplos da demonstração, não regras operacionais.</span></p>
+<div class="card" id="atm" aria-live="polite">
+<ol class="steps" aria-label="Etapas do depósito"><li data-s="1">Material</li><li data-s="2">Peso</li><li data-s="3">Revisão</li><li data-s="4">Resultado</li></ol>
+
+<form id="p1" novalidate><fieldset style="border:0;padding:0;margin:0"><legend style="font-weight:700;margin-bottom:10px">1. Qual material (exemplo)?</legend>
+<div id="chips" role="group" aria-label="Filtrar por categoria"></div><div class="opts" id="mats"></div></fieldset><p class="err" id="e1" role="alert"></p>
+<div class="row"><button class="btn" type="submit">Continuar</button></div></form>
+
+<form id="p2" hidden novalidate><div class="scale" aria-hidden="true"><small id="scT">AGUARDANDO PESO</small><div class="read"><span id="scV">0,0</span> kg</div></div><label for="kg">2. Massa informada (kg), entrada manual</label>
+<input id="kg" inputmode="decimal" autocomplete="off" aria-describedby="e2 h2" placeholder="Ex.: 2,5">
+<p class="muted" id="h2" style="font-size:.85rem;margin:6px 0 0">Limites da demonstração: de 0,1 kg a 50 kg.</p><p class="err" id="e2" role="alert"></p>
+<div class="row"><button class="btn sec" type="button" data-back="1">Voltar</button><button class="btn" type="submit">Revisar</button></div></form>
+
+<div id="p3" hidden><h3>3. Revise antes de registrar</h3><dl><dt>Material</dt><dd id="rm"></dd><dt>Massa</dt><dd id="rk"></dd><dt>Natureza</dt><dd><span class="chip ok">Simulado · entrada manual</span></dd></dl>
+<p class="err" id="e3" role="alert"></p>
+<ul class="proc" id="proc" aria-live="polite" hidden></ul><div class="bar" id="pb" hidden><i style="width:0"></i></div>
+<div class="row"><button class="btn sec" data-back="2">Voltar</button><button class="btn dg" id="cancel">Cancelar</button><button class="btn" id="reg">Registrar depósito simulado</button></div></div>
+
+<div id="p4" hidden><h3>4. Depósito simulado registrado</h3><dl><dt>ID demonstrativo</dt><dd id="oid"></dd><dt>Material</dt><dd id="om"></dd><dt>Massa informada</dt><dd id="ok"></dd><dt>Horário local</dt><dd id="ot"></dd><dt>Status</dt><dd><span class="chip ok">Simulado</span></dd></dl>
+<div id="calc" style="margin-bottom:12px"></div><p class="muted" style="font-size:.9rem"><b>Estimativa demonstrativa:</b> parâmetros educacionais sem validação técnica; não é medição, tarifa oficial nem retorno financeiro. Nenhuma conversão física ocorreu. Fórmulas em <a href="#metodo">Fontes e metodologia</a>.</p>
+<div class="row"><button class="btn" id="novo">Novo depósito</button><a class="btn sec" href="#metodo">Ver metodologia</a><a class="btn sec" href="#inicio">Voltar ao início</a></div></div>
+<p id="msgc" class="muted" hidden>Depósito cancelado. Nada foi registrado.</p>
+</div></div></section>
+
+<!-- IMPACTO -->
+<section id="impacto" aria-labelledby="t-imp"><div class="w">
+<p class="eyebrow">Dados deste navegador</p><h2 id="t-imp">Meu impacto</h2>
+<p class="muted" style="max-width:62ch">Resumo dos depósitos simulados feitos aqui. Os dados ficam apenas neste navegador, sem login nem envio a servidor.</p>
+<div class="grid g3">
+<div class="card"><p class="muted" style="margin:0">Registros simulados</p><p class="kpi" id="kn">0</p><span class="chip ok">Simulado</span></div>
+<div class="card"><p class="muted" style="margin:0">Massa digitada (kg)</p><p class="kpi" id="kt">0,0</p><span class="chip ok">Simulado · manual</span></div>
+<div class="card"><p class="muted" style="margin:0">Potencial energético (kWh)</p><p class="kpi" id="ke">0,0</p><span class="chip">Estimativa demonstrativa</span></div>
+<div class="card"><p class="muted" style="margin:0">Biogás (m³)</p><p class="kpi" id="kb">0,00</p><span class="chip">Estimativa demonstrativa</span></div>
+<div class="card"><p class="muted" style="margin:0">Equivalente em horas de LED de 10 W</p><p class="kpi" id="kl">0</p><span class="chip">Equivalência didática</span></div>
+<div class="card"><p class="muted" style="margin:0">Crédito conceitual</p><p class="kpi" id="kc">R$ 0,00</p><span class="chip">Ilustrativo, sem regra real</span></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>Massa por categoria</h3><div style="display:flex;gap:24px;flex-wrap:wrap;align-items:center"><div id="donut"></div><div id="chart" style="flex:1;min-width:220px"></div></div><p class="muted" id="chartsum" style="font-size:.88rem;margin-top:10px"></p></div>
+<div class="card tw" style="margin-top:16px"><h3>Histórico local</h3><div id="hist"></div>
+<div class="row"><button class="btn dg" id="clr">Reiniciar demonstração</button></div><p class="err" id="stmsg" role="status"></p></div>
+</div></section>
+
+<!-- COMUNIDADE -->
+<section class="band" id="comunidade" aria-labelledby="t-com"><div class="w" style="max-width:760px">
+<p class="eyebrow">Metas ilustrativas</p><h2 id="t-com">Comunidade</h2>
+<p class="alert" role="note"><span aria-hidden="true">⚠️</span><span>Ainda não há comunidade piloto. A meta abaixo é ilustrativa e o progresso mostra apenas seus registros simulados. Não há ranking nem participantes fictícios.</span></p>
+<div class="card"><label for="meta">Meta mensal ilustrativa (kg)</label><input id="meta" type="number" min="1" max="10000" value="1000" style="max-width:200px">
+<p style="margin:16px 0 8px"><b id="mp">0%</b> <span class="muted">da meta · <span id="mt">0,0</span> kg registrados</span></p>
+<div class="bar" role="progressbar" aria-label="Progresso da meta ilustrativa" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="mbar"><i style="width:0"></i></div></div>
+</div></section>
+
+<!-- BIOMASSA -->
+<section id="biomassa" aria-labelledby="t-bio"><div class="w">
+<p class="eyebrow">Conteúdo educativo</p><h2 id="t-bio">Biomassa e rotas de valorização</h2>
+<p class="muted" style="max-width:66ch">Umidade, composição, contaminação, logística, escala e infraestrutura determinam a rota. Não existe rota única para todos os materiais. Este catálogo não é uma lista operacional de aceitação.</p>
+<div class="grid g3">
+<article class="card"><h3>🥬 Orgânicos domiciliares</h3><p class="muted">Restos de frutas e vegetais. Rotas candidatas: compostagem ou digestão anaeróbia. Cuidado: contaminação e umidade alta.</p><span class="chip in">Educativo</span></article>
+<article class="card"><h3>🌿 Resíduos de poda</h3><p class="muted">Material lignocelulósico. Rotas candidatas: compostagem ou aproveitamento térmico, conforme umidade e escala.</p><span class="chip in">Educativo</span></article>
+<article class="card"><h3>🌾 Resíduos agroindustriais</h3><p class="muted">Bagaços, cascas e similares. A rota depende muito do processo de origem e do volume gerado.</p><span class="chip in">Educativo</span></article>
+</div>
+<div class="card" style="margin-top:16px"><h3>Rotas candidatas, em nível educativo</h3>
+<p class="muted" style="margin:0"><b>Compostagem:</b> gera composto orgânico. <b>Digestão anaeróbia:</b> gera biogás, que é diferente de biometano (biogás purificado). <b>Aproveitamento térmico:</b> adequado a materiais secos. Cada escolha exige estudo técnico-econômico.</p></div>
+<div class="card" style="margin-top:16px"><h3>Exemplo educativo: digestão anaeróbia</h3>
+<ol class="flow" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr))"><li><b>1 · Entrada</b>Resíduos orgânicos de alimentos, agrícolas ou agropecuários, conforme triagem.</li><li><b>2 · Digestor anaeróbio</b>Microrganismos decompõem a matéria orgânica sem oxigênio (hidrólise e metanogênese).</li><li><b>3 · Biogás</b>Mistura de metano (CH₄) e dióxido de carbono (CO₂), com impurezas como H₂S.</li><li><b>4 · Usos possíveis</b>Cogeração de calor e eletricidade, ou purificação em <b style="display:inline">biometano</b>.</li><li><b>5 · Digestato</b>Resíduo sólido/líquido do processo; uso como fertilizante depende de análise e normas.</li></ol>
+<p class="muted" style="font-size:.85rem;margin:12px 0 0">Diagrama educativo genérico. Não representa uma instalação do projeto, que ainda não existe. Biogás e biometano não são a mesma coisa.</p></div>
+<div class="card" style="margin-top:16px"><h3>Mapa conceitual</h3>
+<ol class="flow" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr))"><li><b>BioATM</b>Recebe, identifica e registra. Não converte material em eletricidade.</li><li><b>Centro BioHub (conceito)</b>Triagem e avaliação técnica. Local e operador ainda não definidos.</li><li><b>Rotas candidatas</b>Compostagem, biogás ou aproveitamento térmico, conforme o material. <span class="chip">Hipótese</span></li></ol></div>
+<div class="card" style="margin-top:16px"><h3>O que posso depositar? <span class="chip">Proposta, a validar</span></h3><p class="muted">Regras reais de aceitação dependem de revisão de especialista e do operador. Na demonstração:</p>
+<div class="grid g2"><div><b>Exemplos usados na demo</b><div id="catalog" class="muted" style="font-size:.9rem;display:grid;gap:6px;margin-top:6px"></div></div><div><b>Cuidados gerais (proposta)</b><ul class="muted"><li>Não misturar com plástico, vidro, metal ou embalagens.</li><li>Evitar material contaminado por produtos químicos.</li><li>Separar o material muito úmido do seco.</li></ul></div></div></div>
+<details id="metodo" style="margin-top:16px"><summary>Fontes e metodologia</summary>
+<p class="muted">Esta demonstração não usa coeficientes de energia, emissões ou valores econômicos. Fontes científicas, data de consulta e responsável pela revisão técnica ainda <b>serão adicionados após validação com especialistas</b>. Até lá, afirmações técnicas deste catálogo são hipóteses educativas.</p>
+<p class="muted" style="margin-bottom:6px"><b>Leituras de referência</b> (consultadas em 27/10/2026; revisão técnica: <b>pendente</b>):</p>
+<ul class="muted"><li><a href="https://www.livrosabertos.abcd.usp.br/portaldelivrosUSP/catalog/download/1508/1374/5521?inline=1" rel="noopener">Guia Digital Biogás &amp; Biometano: modelos de negócio para resíduos agropecuários e agroindustriais</a> (USP, MME e GIZ).</li><li><a href="https://iee.usp.br/sites/default/files/biblioteca/producao/2009/Livros/coelhoatlasbioenergia.pdf" rel="noopener">Atlas de Bioenergia do Brasil</a> (Cenbio/USP e MME, 2009, pode estar desatualizado).</li><li><a href="https://bibliotecas.sebrae.com.br/chronus/ARQUIVOS_CHRONUS/bds/bds.nsf/1444A5CABEE102E383257428004FDF09/$File/NT0003768A.pdf" rel="noopener">Cartilha Sebrae sobre biomassa para fins energéticos</a> (definição de biomassa).</li></ul>
+<p class="muted" style="margin-bottom:6px"><b>Fórmulas das estimativas da demonstração</b> (parâmetros educacionais herdados do protótipo v2, sem fonte nem intervalo de incerteza):</p>
+<ul class="muted"><li>Energia potencial (kWh) = massa (kg) × fator do material (kWh/kg).</li><li>Biogás (m³) = massa (kg) × fator do material (m³/kg).</li><li>Valor bruto ilustrativo = energia × R$ 0,75/kWh (tarifa fictícia).</li><li>Crédito conceitual = 70% do valor bruto; Fundo BioHub = 30%. Não há regra real de crédito.</li><li>Equivalência: 1 kWh ≈ 100 h de uma lâmpada LED de 10 W.</li></ul>
+<p class="muted">Isto é potencial teórico, não energia produzida nem medição. CO₂e evitado não é calculado.</p></details>
+</div></section>
+
+<!-- CRITÉRIOS -->
+<section id="criterios" aria-labelledby="t-cri"><div class="w">
+<p class="eyebrow">Camada de validação técnica</p><h2 id="t-cri">Critérios para escolher uma rota</h2>
+<p class="muted" style="max-width:66ch">Antes de qualquer promessa, cada material precisa ser avaliado por estes fatores. Os critérios são educativos; limites e pesos serão definidos com especialistas.</p>
+<div class="grid g3">
+<div class="card"><h3>💧 Umidade</h3><p class="muted" style="margin:0">Material muito úmido e material seco tendem a pedir processos diferentes.</p></div>
+<div class="card"><h3>🧪 Composição</h3><p class="muted" style="margin:0">A proporção de componentes do resíduo influencia o que é viável.</p></div>
+<div class="card"><h3>⚠️ Contaminação</h3><p class="muted" style="margin:0">Plásticos, metais ou químicos podem inviabilizar uma rota ou exigir separação.</p></div>
+<div class="card"><h3>🚚 Logística</h3><p class="muted" style="margin:0">Distância, frequência e transporte podem custar mais do que o valor gerado.</p></div>
+<div class="card"><h3>📏 Escala</h3><p class="muted" style="margin:0">Volume disponível define se uma tecnologia faz sentido.</p></div>
+<div class="card"><h3>🏭 Infraestrutura</h3><p class="muted" style="margin:0">Depende de haver um destino operacional real e licenciado.</p></div>
+</div></div></section>
+
+<!-- INDICADORES -->
+<section class="band" aria-labelledby="t-ind"><div class="w">
+<p class="eyebrow">Transparência de dados</p><h2 id="t-ind">Indicadores</h2>
+<div class="empty" role="status"><b>Ainda não há dados operacionais validados.</b> Esta área será preenchida após o piloto. Dados vazios são preferíveis a métricas inventadas.</div>
+<div class="card tw" style="margin-top:16px"><table><caption class="sr" style="text-align:left;font-weight:700;margin-bottom:8px">Definição de cada indicador futuro</caption>
+<thead><tr><th>Indicador</th><th>Unidade</th><th>Origem exigida</th><th>Estado</th></tr></thead><tbody>
+<tr><td>Massa recebida</td><td>kg</td><td>Pesagem e registro</td><td>Simulado</td></tr>
+<tr><td>Destinação confirmada</td><td>kg</td><td>Comprovante do destino</td><td>Sem dados</td></tr>
+<tr><td>Energia produzida</td><td>kWh</td><td>Medidor ou relatório técnico</td><td>Sem dados</td></tr>
+<tr><td>Emissões evitadas</td><td>kg CO₂e</td><td>Metodologia e fatores documentados</td><td>Sem dados</td></tr>
+<tr><td>Valor econômico</td><td>R$</td><td>Receita/custo confirmado</td><td>Sem dados</td></tr></tbody></table></div>
+</div></section>
+
+<!-- PROJETO -->
+<section id="projeto" aria-labelledby="t-proj"><div class="w">
+<p class="eyebrow">Estágio e próximos passos</p><h2 id="t-proj">Projeto, validação e parcerias</h2>
+<ol class="trail"><li class="now">Protótipo digital <span class="chip ok">Atual</span></li><li>Validação com especialistas</li><li>Estudo de viabilidade</li><li>Piloto controlado</li><li>Avaliação</li><li>Possível escala</li></ol>
+<h3 style="margin-top:32px">Onde buscamos apoio</h3>
+<div class="grid g3"><div class="card"><h3>Modelo de negócio</h3><p class="muted" style="margin:0">Orientação sobre viabilidade e incentivos.</p></div><div class="card"><h3>Pesquisa e validação</h3><p class="muted" style="margin:0">Metodologia técnica, especialistas e laboratórios.</p></div><div class="card"><h3>Piloto e logística</h3><p class="muted" style="margin:0">Definição de comunidade, destino e operação.</p></div></div>
+<h3 style="margin-top:28px">Oportunidades a investigar</h3>
+<div class="grid g2">
+<div class="dk"><b>01</b><h3>Educação ambiental</h3><p>Tornar visível o caminho do resíduo para a comunidade. Hipótese.</p></div>
+<div class="dk"><b>02</b><h3>Economia circular local</h3><p>Conectar geradores, operadores e usos possíveis. Hipótese.</p></div>
+<div class="dk"><b>03</b><h3>Dados para gestão</h3><p>Registros com origem e método claros para apoiar decisões. Hipótese.</p></div>
+<div class="dk"><b>04</b><h3>Parcerias de pesquisa</h3><p>Validar rotas e metodologia com universidades e especialistas. Hipótese.</p></div>
+</div>
+<p class="muted" style="font-size:.88rem">Equipe e contatos oficiais serão divulgados após confirmação.</p>
+<div class="grid g2" style="margin-top:28px">
+<div class="card"><h3>Diferencial proposto <span class="chip">Hipótese</span></h3><p class="muted" style="margin:0">Combinar registro rastreável, participação da comunidade e transparência sobre o que é medido, simulado ou ainda não validado.</p></div>
+<div class="card"><h3>Modelo de negócio <span class="chip">Hipótese</span></h3><p class="muted" style="margin:0">Possíveis fontes de valor a testar: serviço a geradores, aproveitamento do material e apoio de programas. Nenhum custo, receita ou incentivo está confirmado.</p></div>
+<div class="card"><h3>Riscos principais</h3><ul class="muted" style="margin:0"><li>Métricas simuladas lidas como resultado real.</li><li>Rota inadequada ao material ou à escala.</li><li>Logística mais cara que o valor gerado.</li><li>Crédito comunitário sem regras auditáveis.</li><li>Privacidade de apelidos em aparelhos compartilhados.</li></ul></div>
+<div class="card"><h3>Plano de validação</h3><ol class="muted" style="margin:0"><li>Entrevistas e definição das classes de resíduos.</li><li>Revisão da metodologia por especialistas.</li><li>Estudo técnico-econômico.</li><li>Critérios para um piloto controlado.</li></ol></div>
+</div>
+<h3 style="margin-top:32px">Caminhos de desenvolvimento</h3>
+<div class="card tw"><table><caption class="sr" style="text-align:left;font-weight:700;margin-bottom:8px">Quatro caminhos e suas condições</caption><thead><tr><th>Caminho</th><th>O que acrescenta</th><th>Quando</th></tr></thead><tbody>
+<tr><td><b>A. Protótipo demonstrativo</b></td><td>Fluxo completo, métricas simuladas e apresentação</td><td><span class="chip ok">Agora</span></td></tr>
+<tr><td>B. Plataforma com dados reais</td><td>Cadastro, histórico persistente, operadores e rastreabilidade</td><td>Após definir requisitos e piloto</td></tr>
+<tr><td>C. BioATM físico</td><td>Balança, identificação, hardware e integração</td><td>Após estudo técnico</td></tr>
+<tr><td>D. Rede comunitária</td><td>Pontos de coleta, destinos, parceiros e indicadores agregados</td><td>Após validar operação e modelo</td></tr></tbody></table></div>
+<details style="margin-top:20px"><summary>Roteiro de apresentação de 3 minutos</summary><ol class="muted"><li><b>Problema (30 s):</b> resíduos orgânicos nem sempre são separados e encaminhados a uma rota adequada.</li><li><b>Proposta (30 s):</b> receber, rastrear e avaliar, com transparência sobre os dados.</li><li><b>Demonstração (90 s):</b> faça um depósito simulado no BioATM e abra Meu impacto.</li><li><b>Estágio (15 s):</b> protótipo digital; nada aqui é medição real.</li><li><b>Pedido (15 s):</b> orientação de modelo de negócio, validação técnica e definição de piloto.</li></ol></details>
+<p class="alert" role="note" style="margin-top:20px"><span aria-hidden="true">ℹ️</span><span>Não há parceria institucional, patente, retorno financeiro ou impacto ambiental declarados. Instituições só serão citadas com autorização.</span></p>
+</div></section>
+</main>
+
+<footer><div class="w">
+<p style="font-weight:800;font-size:1.2rem">🌱 Enerflux / BioHub</p>
+<p class="muted" style="max-width:62ch">Esta versão é uma demonstração conceitual. Resultados energéticos, ambientais e econômicos dependem de validação técnica e operação real.</p>
+<nav aria-label="Rodapé"><a href="#como">Como funciona</a> · <a href="#metodo">Metodologia e fontes</a> · <a href="https://joaovitor10034.github.io/Enerflux-biohub-Natureza" rel="noopener">Demonstração atual</a> · <a href="#inicio">Voltar ao topo</a> · <button id="pres" type="button" aria-pressed="false" style="background:none;border:0;color:#9FE3C4;text-decoration:underline;font:inherit;cursor:pointer;min-height:44px">Modo apresentação</button></nav>
+<p class="muted" style="font-size:.85rem;margin-top:20px">Autoria e contatos oficiais: a confirmar. Versão institucional de outubro de 2026.</p>
+</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>

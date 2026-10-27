@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enerflux-biohub-natureza.vercel.app/sitemap.xml
